@@ -6,17 +6,22 @@
   </head>
   <body>
     <script>
-      var arr1 = [60, 50, 60, 88, 54, 54, 58, 50, 52,
+      var scores = [60, 50, 60, 88, 54, 54, 58, 50, 52,
                     54, 48, 69, 34, 55, 51, 52, 44, 66];
+      var max = scores[0];
 
-      var arr2 = [12, 34, 67, 23, 98, 29, 10, 23, 33];
+
       
-      function showArray(arr){   //数组遍历
-       for (var i = 0; i < arr.length ; i++,i++ ){
-         document.write(arr[i] + ",");
-       }
+
+      for (var i = 1; i < scores.length ; i++){
+        document.write(scores[i] + "<br>");
+      
+         if (scores[i] < max){
+            max = scores[i];
+         }
       }
-      document.write("数组中的最大值是："+ max + "<br>");
+
+      document.write("数组中的最小值是："+ max + "<br>");
     </script>
   </body>
 </html>
